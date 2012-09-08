@@ -30,7 +30,7 @@ class SingletonModelAdmin(admin.ModelAdmin):
             url(r'^$',
                 wrap(self.change_view),
                 {'object_id': '1'},
-                name='%s_%s_change' % info),
+                name='%s_%s_changelist' % info),
         )
         return urlpatterns
         
